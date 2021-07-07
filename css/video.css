@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+:root {
+  --purple: #4cc9f0;
+}
+html {
+  font-size: 62.5;
+}
+.navbar {
+  position: sticky !important;
+  top: 0px !important;
+  z-index: 1 !important;
+  background:#4cc9f0;
+}
+
+.navbar .navbar-brand {
+  color: #fff !important;
+  font-weight: 300 !important;
+  text-decoration: none !important;
+  margin-left: 30px !important;
+}
+
+.navbar .navbar-brand:hover {
+  font-weight: 900 !important;
+}
+.carousel-control-prev-icon {
+  background-image:url("../images/icon/left.png") !important;
+  width:3rem;
+  height:3rem;
+  
+}
+.carousel-control-next-icon {
+  background-image:url("../images/icon/right.png") !important;
+  width:3rem;
+  height:3rem;
+}
+.section-title {
+  position: relative;
+  color: #4cc9f0;
+  font-size: 2.2em;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+.section-title:before {
+  content: "";
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  width: 140px;
+  height: 4px;
+  background: #4cc9f0;
+  transform: translateX(-50%);
+}
+
+.section-title:after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #4cc9f0;
+  transform: translateX(-50%);
+}
+
+.container .header {
+  font-size: 3rem;
+  margin: 2rem 0;
+  text-transform: capitalize;
+  color: var(--purple);
+  font-family: "Poppins",Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.video-container .video {
+  height: 15rem;
+  width: 25rem;
+  margin: 2rem;
+  box-shadow: 0 0.5rem 0.1rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.video-container .video video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.video-container .video video:hover {
+  transition: 0.2s linear;
+  transform: scale(1.3);
+}
+.video-container .video .active {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 80%;
+  box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.video-container .video .active:hover {
+  transition: none;
+  transform: translate(-50%, -50%) scale(1);
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 1rem; 
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card img{
+  border-radius: 1rem; 
+}
+/* ==============================================footer===================================== */
+.footer {
+  background: #000016 !important;
+  color: #fff;
+  text-align: center;
+  padding: 2em 2em;
+}
+
+.footer p {
+  background: #000016 !important;
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+@media (max-width: 1040px) {
+  .video-container .video video:hover {
+    transition: none !important;
+  }
+}
