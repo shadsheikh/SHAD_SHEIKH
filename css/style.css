@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Ubuntu:wght@300&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 * {
   margin: 0;
@@ -117,6 +115,7 @@ ul {
 #btn{
   color:#fff  !important;
   background:#4cc9f0 !important;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%) !important;
 }
 #btn:hover{
   background: #ffffff !important;
@@ -176,17 +175,17 @@ header .navigation {
 header .navigation a {
   color: #fff !important;
   font-size: 1.2em !important;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
   text-decoration: none !important;
   margin-left: 30px !important;
 }
 
 header .navigation a:hover {
-  color: #4cc9f0 !important;
+  border-bottom: 2px solid #fff;
 }
 
 header.sticky .navigation a:hover {
-  color: #000 !important;
+  border-bottom: 2px solid #fff;
 }
 
 body {
@@ -505,7 +504,12 @@ body {
   header .navigation.active {
     z-index: 888 !important;
     position: fixed !important;
-    background: #fff !important;
+    background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+    -webkit-backdrop-filter: blur( 11.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     top: 0 !important;
     right: 0 !important;
     width: 380px !important;
@@ -568,7 +572,7 @@ body {
     font-size: 1em;
   }
 .animated-text h3 {
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
  
 
@@ -701,12 +705,14 @@ width: 297px;
   grid-template-columns: repeat(3, 1fr);
   /* grid-template-rows: repeat(2, 1fr); */
   column-gap: 2rem;
+ 
   /* border-bottom: 1px solid var(--first-color); */
   padding-bottom: 5rem;
 }
 .portfolio__img {
   position: relative;
   overflow: hidden;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
 }
 .portfolio__img img {
   border-radius: 0.5rem;
