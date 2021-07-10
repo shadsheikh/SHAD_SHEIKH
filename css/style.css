@@ -112,12 +112,24 @@ ul {
   color:#fff !important;
   border:2px solid #fff!important;
 }
-#btn{
+.btn1{
+  
+  font-size: 1em !important;
+  font-weight: 600 !important;
+  display: inline-block !important;
+  padding: 10px 20px !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  letter-spacing: 1px !important;
+  border-radius: 2px !important;
+  margin-top: 30px !important;
+  transition: 0.5s ease !important;
+  border-radius: 23px !important;
   color:#fff  !important;
   background:#4cc9f0 !important;
   box-shadow: 0 5px 25px rgba(1 1 1 / 15%) !important;
 }
-#btn:hover{
+.btn1:hover{
   background: #ffffff !important;
   color:#4cc9f0 !important;
   border:2px solid #4cc9f0  !important;
@@ -435,7 +447,7 @@ body {
 
 .contact .content .row .card {
   background: #fff;
-  width: 240px;
+  width: 260px;
   margin: 20px;
   padding: 25px;
   display: flex;
@@ -471,9 +483,88 @@ body {
 .contact .content .row .card .info span {
   color: #666;
   font-weight: 500;
+  font-size:15px;
+}
+.contact .content .row .card .info a{
+  text-decoration-color: #4cc9f0;
+}
+.contact1{
+  background:url("../images/hire_me_img.jpg") no-repeat ;
+ background-position: center;
+ background-size: 100% 100%;
+}
+.contact1 .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 20px;
+  opacity:1;
+}
+.contact1 .content .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
+.contact1 .content .row .card {
+  background: #fff;
+  width: 240px;
+  margin: 30px;
+ padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  transform: translateY(-190%);
+}
+.contact1 .content .row .card .info {
+  text-align: center;
+}
 
+.contact1 .content .row .card .info h3 {
+  color: #4cc9f0;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 10px;
+  text-shadow: 3px 2px 5px rgba(150, 195, 150, 1);
+}
+
+.contact1 .content .row .card .info span {
+  color: #666;
+  font-weight: bold; 
+  font-size: large;
+}
+.contact1 .hire_me{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact1 .hire_me .hire_me_card{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-30%);
+}
+.contact1 .hire_me .hire_me_card h3{
+  font-weight: 900;
+  font-size:3em;
+  letter-spacing: 2px;
+  color:#fff;  
+}
+.contact1 .hire_me .hire_me_card p{
+  color:#fff;
+  font-size:1.1em;
+
+}
+.contact1 .hire_me .hire_me_card span{
+color:#4cc9f0;
+}
 .footer {
   background: #000016 !important;
   color: #fff;
@@ -481,12 +572,17 @@ body {
   padding: 2em 2em;
 }
 
-.footer p {
+/* .footer p {
   background: #000016 !important;
   font-size: 20px;
   font-weight: 400;
   margin-top: 10px;
+} */
+#button-addon1 {
+  color: #4cc9f0;
 }
+
+
 
 @media screen and (max-width: 1040px) {
   header {
@@ -609,6 +705,20 @@ body {
   .contact-form {
     padding: 35px 40px;
   }
+  .contact1{
+    background:url("../images/hire_me_img_res.jpg") no-repeat ;
+   background-position: center;
+   background-size: 100% 100%;
+   margin-top: 23rem;
+  }
+
+  .contact1 .content .row {
+    transform: translateY(-100%);
+  }
+.contact1 .content .row .card{
+  margin-bottom: 0px;
+}
+
 }
 
 .scrollToTop-btn {
@@ -647,6 +757,8 @@ body {
   transform: translateY(0);
   opacity: 1;
 }
+
+
 @media screen and (min-width: 768px) and (max-width:1280px){
   .home__img img{
    width:60vw;
